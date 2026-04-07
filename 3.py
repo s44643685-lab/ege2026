@@ -1,21 +1,21 @@
 from math import *
 
-i = 9.5
-print(f"округляем в вверх {ceil(i)}")
-print(f"округляем в вниз {floor(i)}")
-
-i1 = ceil(11.5)
-i2 = floor(11.5)
-print(f"округляем в вверх {i1}")
-print(f"в вниз {i2}")
-
-N = 1024
-i = log2(N)
-print(f"{i} бит")
-
-N = 1024 + 10
-i = ceil(log2(N))
-print(f"{i} бит")
+# i = 9.5
+# print(f"округляем в вверх {ceil(i)}")
+# print(f"округляем в вниз {floor(i)}")
+#
+# i1 = ceil(11.5)
+# i2 = floor(11.5)
+# print(f"округляем в вверх {i1}")
+# print(f"в вниз {i2}")
+#
+# N = 1024
+# i = log2(N)
+# print(f"{i} бит")
+#
+# N = 1024 + 10
+# i = ceil(log2(N))
+# print(f"{i} бит")
 
 # ? Практика
 
@@ -28,20 +28,20 @@ print(f"{i} бит")
 и минимально возможным числом бит. Известно, что для хранения 2050 идентификаторов отведено более 709 Кбайт памяти. 
 Определите минимально возможную длину идентификатора. В ответе запишите только целое число
 '''
-from math import *
-N = 10 + 26 + 2013
-i = ceil(log2(N)) # бит
-print(f"i={i} бит")
-
-n = 2050
-V = 709 * 1024
-I = ceil(V / n)
-print(f"I={I} байт")
-
-L = I * 8 / i
-print(f"L={L} символ")
-print(ceil(L) * i / 8)
-print(floor(L) * i / 8)
+# from math import *
+# N = 10 + 26 + 2013
+# i = ceil(log2(N)) # бит
+# print(f"i={i} бит")
+#
+# n = 2050
+# V = 709 * 1024
+# I = ceil(V / n)
+# print(f"I={I} байт")
+#
+# L = I * 8 / i
+# print(f"L={L} символ")
+# print(ceil(L) * i / 8)
+# print(floor(L) * i / 8)
 
 '''
 Задача 2 
@@ -53,13 +53,115 @@ print(floor(L) * i / 8)
 Определите минимально возможную мощность алфавита, используемого для записи серийных номеров.
 В ответе запишите только целое число.
 '''
-L = 105
-n = 65536
-V = 7 * 2**20
-I = ceil(V / n)
-print(f"I={I} байт")
-i = I * 8 / L
-print(f"i={i} бит")
-print(ceil(i) * L / 8)
-print(floor(i) * L / 8)
-print(f"N={2**ceil(i-1)+1} ")
+# L = 105
+# n = 65536
+# V = 7 * 2**20
+# I = ceil(V / n)
+# print(f"I={I} байт")
+# i = I * 8 / L
+# print(f"i={i} бит")
+# print(ceil(i) * L / 8)
+# print(floor(i) * L / 8)
+# print(f"N={2**ceil(i-1)+1} ")
+
+# 1 дз 23195
+# L = 172
+# V = 54 * 2**20
+# n = 356984
+# I = ceil(V / n)
+# print(I)
+# i = I * 8 / L
+# print(ceil(i) * L / 8)
+# print(floor(i) * L / 8)
+# print(f"N={2**ceil(i-1)+1} ")
+
+# 2 дз 23270
+# N = 10 + 27
+# i = ceil(log2(N))
+# V = 12 * 2**10
+# n = 3548
+# I = ceil(V / n)
+# print("I=",I)
+# L = I * 8 / i
+# print("L=",L)
+# print("Imax",ceil(L) * i / 8)
+# print("Imin",floor(L) * i / 8)
+
+# 3 дз 7338
+# n = 350
+# L = 10
+# N = 26
+# i = ceil(log2(N))
+# I = ceil(L * i / 8)
+# V = I * n
+# print(V)
+
+# # 4 дз 12243
+# L = 110
+# N = 1030
+# i = ceil(log2(N))
+# n = 32768
+# I = ceil(L * i / 8)
+# V = I * n / 2**10
+# print(V)
+
+# 5 дз 6592
+# N = 1024 * 2 + 10
+# i = ceil(log2(N))
+# V = 6 * 2**10
+# n = 256
+# I = V / n
+# print(I)
+# L = I * 8 / i
+# print(ceil(L) * i / 8)
+# print(floor(L) * i / 8)
+# print(L)
+
+# # 1 дз 15324
+# N = 7084 + 10
+# i = ceil(log2(N))
+# L = 5
+# n = 22528
+# I =  ceil(L * i / 8)
+# V = I * n / 2**10
+# print(V)
+
+# # 2 дз 17674
+# N = 10 + 450 + 26
+# i = ceil(log2(N))
+# V = 100 * 2**10
+# n = 575
+# I = V / n
+# L = I * 8 / i
+# print("L=",L)
+# print("Imax",ceil(L) * i / 8)
+# print("Imin",floor(L) * i / 8)
+
+# # 3 дз 21706
+# L = 119
+# n = 125300
+# V = 23 * 2**20
+# I = ceil(V / n)
+# i = I * 8 / L
+# print(ceil(i) * L / 8)
+# print(floor(i) * L / 8)
+# print(f"N={2**ceil(i-1)+1} ")
+
+# # 4 дз 17933
+# L = 1231
+# n = 523872
+# V = 432 * 2**20
+# I = ceil(V / n)
+# i = I * 8 / L
+# print(ceil(i) * L / 8)
+# print(floor(i) * L / 8)
+# print(f"N={2**ceil(i-1)+1} ")
+
+# 5 дз 17745
+N = 4080 + 10
+i = ceil(log2(N))
+L = 256
+n = 2**16
+I = ceil(L * i / 8)
+V = I * n / 2**20
+print(V)

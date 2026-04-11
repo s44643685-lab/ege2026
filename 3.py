@@ -157,11 +157,11 @@ from math import *
 # print(floor(i) * L / 8)
 # print(f"N={2**ceil(i-1)+1} ")
 
-# 5 дз 17745
-N = 4080 + 10
-i = ceil(log2(N))
-L = 256
-n = 2**16
-I = ceil(L * i / 8)
-V = I * n / 2**20
-print(V)
+# # 5 дз 17745
+# N = 4080 + 10
+# i = ceil(log2(N))
+# L = 256
+# n = 2**16
+# I = ceil(L * i / 8)
+# V = I * n / 2**20
+# print(V)

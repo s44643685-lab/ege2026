@@ -26,15 +26,15 @@
 
 from math import*
 
-N = 17 + 10
-i = ceil(log2(N))
-n = 7564230
-V = 31 * 2**20
-for L in range (1, 100):
-    I = ceil(L * i / 8)
-    if I * n > V:
-        print(L)
-        break
+# N = 17 + 10
+# i = ceil(log2(N))
+# n = 7564230
+# V = 31 * 2**20
+# for L in range (1, 100):
+#     I = ceil(L * i / 8)
+#     if I * n > V:
+#         print(L)
+#         break
 
 # # 1 дз 9738
 # h = 1024
@@ -84,4 +84,16 @@ for L in range (1, 100):
 # V = n * I / 2**10
 # print(V)
 
+# дз 24981
+
+h = 1080
+w = 1920
+n = 60
+t = 57
+N = 4096
+i = ceil(log2(N))
+V1 = h * w * i * n * t
+print(V1)
+V2 = h * w * 11 * 24 * t
+print((V1 - V2) / 2**13)
 

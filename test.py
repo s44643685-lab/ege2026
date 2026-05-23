@@ -1,39 +1,55 @@
 from turtle import *
 screensize(2000, 2000)
 tracer(False)
-
+# дз 21892
+# m = 15
+#
+# rt(90)
+#
+# for i in range(7):
+#     rt(45)
+#     fd(11 * m)
+#     rt(45)
+#
+# up()
+#
+# for x in range(-15, 1):
+#     for y in range(-8, 9):
+#         goto(x * m, y * m)
+#         dot(3, "red")
+# update()
+# done()
+#
+# # дз 21892
 m = 12
 
 for i in range(3):
-    fd(7 * m)
+    fd(39 * m)
     rt(90)
-    fd(12 * m)
+    fd(48 * m)
     rt(90)
 
 up()
 
-fd(4 * m)
+fd(27 * m)
 rt(90)
-fd(6 * m)
+fd(24 * m)
 lt(90)
 
 down()
 
-for i in range(4):
-    fd(83 * m)
+for i in range(3):
+    fd(29 * m)
     rt(90)
-    fd(77 * m)
+    bk(18 * m)
     rt(90)
 
 up()
 
-for x in range(0, 8):
-    for y in range(-12, 1):
+for x in range(-17, 13):
+    for y in range(28, 47):
         goto(x * m, y * m)
-        dot(3, 'red')
-print((4 - -80) * (72 - -6))
-print((1- -12) * (8 - 0))
-
-
+        dot(3, "red")
+print (((13 - -17)+(47 - 28)) * 2)
 update()
 done()

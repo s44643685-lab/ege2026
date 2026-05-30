@@ -86,14 +86,45 @@ from math import*
 
 # дз 24981
 
-h = 1080
-w = 1920
-n = 60
-t = 57
-N = 4096
-i = ceil(log2(N))
-V1 = h * w * i * n * t
-print(V1)
-V2 = h * w * 11 * 24 * t
-print((V1 - V2) / 2**13)
+# h = 1080
+# w = 1920
+# n = 60
+# t = 57
+# N = 4096
+# i = ceil(log2(N))
+# V1 = h * w * i * n * t
+# print(V1)
+# V2 = h * w * 11 * 24 * t
+# print((V1 - V2) / 2**13)
 
+# # дз 29960
+# i = 30
+# h = 1024
+# w = 768
+# V = h * w * i
+# h2 = 800
+# w2 = 600
+# i2 = 28
+# V2 = h2 * w2 * i2
+# I = ((V - V2) * 100) / 2**13
+# print(I)
+
+# дз 137
+L1 = 14
+L2 = 8
+N1 = 26 + 10
+N2 = 6 + 10
+i1 = ceil(log2(N1))
+i2 = ceil(log2(N2))
+I1 = ceil(L1 * i1 / 8)
+I2 = ceil(L2 * i2 / 8)
+print(I1, I2)
+
+# h = 486
+# w = 720
+# V = 80 * 2**13
+# k = h * w
+# I = V / 0.85
+# i = ceil(I / k)
+# N = 2**i
+# print(N)
